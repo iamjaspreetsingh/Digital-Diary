@@ -1,0 +1,329 @@
+*     Lala Lajpat Rai.
+2801
+
+*     Ranveer Singh.
+0607
+
+*     Priyanka Chopra.
+1807
+
+*     Amrik Singh Dhillon.
+0101
+
+*     Zahoor Qasim.
+3112
+
+*     A G Milkha Singh.
+3112
+
+*     Sanjay Dutt.
+2907
+
+*     Mahendra Singh Dhoni.
+0707
+
+*     Sonu Nigam.
+3007
+
+*     Himesh Reshammiya.
+2307
+
+*     Naseeruddin Shah.
+2007
+
+*     Sourav Ganguly.
+0807
+
+*     Bal Gangadhar Tilak.
+2307
+
+*     Azim Premji.
+2407
+
+*     Akhilesh Yadav.
+0107
+
+*     Chandrasekhar Azad.
+2307
+
+*      Munshi Premchand.
+3107
+
+*      Saif Ali Khan.
+1608
+
+*      Mother Teresa.
+2708
+
+*      Kajol.
+0508
+
+*      Randeep Hooda.
+2008
+
+*      Kishore Kumar.
+0408
+
+*      Rajiv Gandhi.
+2008
+
+*      S Shankar.
+1708
+
+*      Kareena Kapoor.
+2109
+
+*      Akshay Kumar.
+0909
+
+*       Ranbir Kapoor.
+2809
+
+*        Manmohan Singh.
+2609
+
+*        Bhagat Singh.
+2809
+
+*        Lata Mangeshkar.
+2809
+
+*        Prachi Desai.
+1209
+
+*         Rishi Kapoor.
+0409
+
+*         Narendra Modi.
+1709
+
+*          Mahatma Gandhi.
+0210
+
+*          Amitabh Bachchan.
+1110
+
+*          Robbins Tim  .
+1610
+
+*          Parineeti Chopra.
+2210
+
+*           Abdul Kalam.
+1510
+
+*           Sunny Deol.
+1910
+
+*           Hema Malini.
+1610
+
+*           Shahrukh Khan.
+0211
+
+*           Aishwarya Rai.
+0111
+
+*            Indira Gandhi.
+1911
+
+*            Kamal Haasan.
+0711
+
+*             Virat Kohli.
+0511
+
+*             Rani Lakshmibai.
+1911
+
+*             Sushmita Sen.
+1911
+
+*             Sania Mirza.
+1511
+
+*             Salman Khan.
+2712
+
+*              Rajnikanth.
+1212
+
+*             John Abraham.
+1712
+
+*             Srinivasa Ramanujan.
+2212
+
+*             Anil Kapoor.
+2412
+
+*            Sonia Gandhi.
+0912
+
+*            Govinda.
+2112
+
+*            Dharmendra Deol.
+0812
+
+*            Dilip Kumar.
+1112
+
+*             Rudyard Kipling.
+3012
+
+*              Dhirubhai Ambani.
+2812
+
+*              Ratan Tata.
+2812
+
+*              Atal Bihari Vajpayee.
+2512
+
+*              Pranab Mukherjee.
+1112
+
+*              Deepika Padukone.
+0501
+
+*              Hrithik Roshan.
+1001
+
+*              Bipasha Basu.
+0701
+
+*              Swami Vivekananda.
+1201
+
+*              Vidya Balan.
+0101
+
+*              A R Rahman.
+0601
+
+*              Preity Zinta.
+3101
+
+*              Subhash Chandra Bose.
+2301
+
+*              Shruti Haasan.
+2801
+
+*              Farhan Akhtar.
+0901
+
+*              Bobby Deol.
+2701
+
+*              Sherlyn Chopra.
+1102
+
+*              Shahid Kapoor.
+2502
+
+*              Abhishek Bachchan.
+0502
+
+*              Shivaji.
+1902
+
+*              Sarojini Naidu.
+1302
+
+*              Jayalalithaa Jayaram.
+2402
+
+*              Aamir Khan.
+1403
+
+*              Rani Mukerji.
+2103
+
+*              Emraan Hashmi.
+2403
+
+*              Honey Singh.
+1503
+
+*              Kalpana Chawla.
+1703
+
+*              Saina Nehwal.
+1703
+
+*              Kangana Ranaut.
+2003
+
+*              Anupam Kher.
+0703
+
+*              Rohit Shetty.
+1403
+
+*              Sachin Tendulkar.
+2404
+
+*              Ajay Devgan.
+0204
+
+*              Dr B R Ambedkar.
+1404
+
+*              Guru Nanak Dev Ji.
+1504
+
+*              Mukesh Ambani.
+1904
+
+*              Prabhu Deva.
+0304
+
+*              Chetan Bhagat.
+2204
+
+*              Madhuri Dixit.
+1505
+
+*              Anushka Sharma.
+0105
+
+*              Rabindranath Tagore.
+0705
+
+*              Karan Johar.
+2505
+
+*              Paresh Rawal.
+3005
+
+*              Namitha Kapoor.
+1005
+
+*              Nathuram Godse.
+1905
+
+*              Joseph Vijay.
+2206
+
+*              Sonakshi Sinha.
+0206
+
+*              Karisma Kapoor.
+2506
+
+*              Salman Rushdie.
+1906
+
+*              Rahul Gandhi.
+1906
+
+*              George Orwell.
+2506
+
+*              Shilpa Shetty.
+0806
+
+
+
