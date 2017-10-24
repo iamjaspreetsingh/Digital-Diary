@@ -10,4 +10,4 @@ Copy the files 3d.cpp, inv.txt, oc.txt, person.txt in your bin folder of C++ and
  <hr> 
 The password while running the code is : <br>
 Password : iamjs
-Use the password after running the code
+Use this password when you run the code 
