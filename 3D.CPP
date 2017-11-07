@@ -8,10 +8,11 @@
 #include<dos.h>
 #include<graphics.h>
 int friends,i=0,lucky,nn,co=0,min,l=1,op,flagopt,rmon,rda,remdt,optio=0,remmo,more,tod=0,opti=0;                                                                                                                                                                                                             char pword[10]="iamjs2";
- long int remyr;    int dat,mo;
-long int yr;   char nam[40] ;
- long char naam[40],remnam[40],password[20],na[40];
-
+long int remyr;
+int dat,mo;
+long int yr;
+char nam[40] ;
+long char naam[40],remnam[40],password[20],na[40];
 
 class datee
 {int dd;
@@ -21,7 +22,8 @@ long int yy;
 long char name[40];
 public:
 void input()
-{ if(optio==2)
+{ //if account username is already created
+if(optio==2)
 {cprintf("\n\n Enter Details For FRIEND no. ");cout<<i+1+co<<" : \n\n";
  cprintf("\n Enter Name Of FRIEND : ");
  gets(name);
@@ -67,8 +69,8 @@ strcpy(name,nam);
   {
   struct dosdate_t q;
 _dos_getdate(&q);
-			       int yr=(int)q.year-yy,da=(int)q.day-dd,mon=(int)q.month-mm;
-	     if((q.month-mm)<0) {yr=yr-1;mon=12-mm+q.month;}     if((q.day-dd)<0) { mon-=1;da=30-dd+q.day;}
+ int yr=(int)q.year-yy,da=(int)q.day-dd,mon=(int)q.month-mm;
+ if((q.month-mm)<0) {yr=yr-1;mon=12-mm+q.month;}     if((q.day-dd)<0) { mon-=1;da=30-dd+q.day;}
 if(l==1)
 {rmon=mon;     rda=da;   remdt=dd;remmo=mm;remyr=yy;
 strcpy(remnam,name);   }
@@ -119,11 +121,6 @@ strcpy(remnam,name);
 else if(rmon==mon)
 {if(rda<da)
   strcpy(remnam,name);   }
-
-
-
-
-
 
 if((mm==3&&dd>=20)||(mm==4&&dd<=18)) strcpy(fort,"ARIES");
 if((mm==4&&dd>=19)||(mm==5&&dd<=19)) strcpy(fort,"TAURUS");if((mm==5&&dd>=20)||(mm==6&&dd<=20)) strcpy(fort,"GEMINI");if((mm==6&&dd>=21)||(mm==7&&dd<=21)) strcpy(fort,"CANCER");if((mm==7&&dd>=22)||(mm==8&&dd<=21)) strcpy(fort,"LEO");if((mm==8&&dd>=22)||(mm==9&&dd<=21)) strcpy(fort,"VIRGO");if((mm==9&&dd>=22)||(mm==10&&dd<=22)) strcpy(fort,"LIBRA");if((mm==10&&dd>=23)||(mm==11&&dd<=20)) strcpy(fort,"SCORPIO");if((mm==11&&dd>=21)||(mm==12&&dd<=20)) strcpy(fort,"SAGITTARIUS");if((mm==12&&dd>=21)||(mm==1&&dd<=19)) strcpy(fort,"CAPRICORN");if((mm==1&&dd>=20)||(mm==2&&dd<=18)) strcpy(fort,"AQUARIUS");if((mm==2&&dd>=19)||(mm==3&&dd<=19)) strcpy(fort,"PISCES");
@@ -370,7 +367,8 @@ fil.write((char*)&d,sizeof(d));
 
 
  void savee(char fname[])
- {fstream fil;
+ {// for saving the user account
+fstream fil;
 datee d;    int dat,mo;
 long int yr;   char nam[40],pass[80];
 strcpy(pass,(strcat(password,".txt")));
@@ -388,22 +386,13 @@ strcpy(nam,na);
  f.close();
  fil.close();
 
-
-
   }
 
 
 
-
-
-
-
-
-
-
-
 void create(char fname[20])
-{fstream fil;
+{
+fstream fil;
 datee d;
 fil.open(fname,ios::binary|ios::out);
 for(i=0;i<friends;i++)
@@ -412,7 +401,8 @@ fil.write((char*)&d,sizeof(d));}
 }
 
 void createe(char fname[20])
-{fstream fil;
+{// creation
+	fstream fil;
 datee d;
 friends+=nn;
 fil.open(fname,ios::binary|ios::out|ios::ate);
@@ -426,7 +416,7 @@ fil.write((char*)&d,sizeof(d));}
 
 
 void display(char fname[])
-{
+{//display
 fstream fil;
 datee d;
 fil.open(fname,ios::binary|ios::in);
@@ -452,7 +442,7 @@ d.show();
 }
 
 void delet(char fname[],char tname[])
-{
+{//deletion
 fstream fil1,fil2;
 int c=1;
 datee d;
@@ -468,7 +458,8 @@ fil2.close();
 }
 
 void edit(char fname[])
-{ fstream fil;
+{//editing
+	fstream fil;
 datee d;
 co=nn-1-i;
 fil.open(fname,ios::binary|ios::out|ios::ate);
@@ -491,7 +482,8 @@ while(fil.read((char*)&d,sizeof(d)))
   }
 
 void dispall(char fname[])
-{fstream fil;
+{//display
+	fstream fil;
 datee d;  int sno=1;
 textcolor(YELLOW);
 fil.open(fname,ios::binary|ios::in);
@@ -511,7 +503,7 @@ sno++;}fil.close();
 }
 
 void grp(char fname[])
-{
+{//grouping
 fstream fil;
 datee d;
 textcolor(YELLOW);
@@ -582,6 +574,7 @@ getch();
 
 void dateob(char fname[])
 {clrscr();
+ //date of birth 
 fstream fil;
 datee d;  int sno=1;
 textcolor(YELLOW);
@@ -613,7 +606,7 @@ getch();
 
 
 class reminder
-{
+{//add reminder
 public :
 struct time t;
 struct date d;
@@ -952,7 +945,7 @@ cprintf(" Press 4 To Exit");   cout<<"\t : ";
 
 
        union REGS in,out;
-
+// adding the mouse functionality
        int callmouse()
        {
 	      in.x.ax=1;
