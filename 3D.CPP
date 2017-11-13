@@ -401,7 +401,7 @@ fil.write((char*)&d,sizeof(d));}
 }
 
 void createe(char fname[20])
-{// creation
+{// creation of friend
 	fstream fil;
 datee d;
 friends+=nn;
@@ -442,7 +442,7 @@ d.show();
 }
 
 void delet(char fname[],char tname[])
-{//deletion
+{//deletion of friend data
 fstream fil1,fil2;
 int c=1;
 datee d;
@@ -458,7 +458,7 @@ fil2.close();
 }
 
 void edit(char fname[])
-{//editing
+{//editing friend's record
 	fstream fil;
 datee d;
 co=nn-1-i;
@@ -503,7 +503,7 @@ sno++;}fil.close();
 }
 
 void grp(char fname[])
-{//grouping
+{//grouping of friend's birthday by month or age
 fstream fil;
 datee d;
 textcolor(YELLOW);
@@ -995,7 +995,7 @@ cprintf(" Press 4 To Exit");   cout<<"\t : ";
 
 
 
-main()
+void main()
 {
  textcolor(YELLOW);
  clrscr();   char cz[10];
@@ -1030,7 +1030,7 @@ gotoxy(1,1);
 
 gotoxy(1,1);
 
-
+// front screen animation
 for(i=13;i>1;i--)
 {gotoxy(18-i,i+13);
 cprintf(" | ");   }
@@ -1119,7 +1119,7 @@ cout<<"\n ";
 
  cout<<"\t\t";
   int x1,y1,cl1,a1,b1;
-
+//asks for an existing or new member
 	     cout<<"\n";                 textcolor(YELLOW);
 	     cprintf("    ____________________________________________________________________   ");
 	     cout<<"\n\n";
@@ -1235,13 +1235,13 @@ getch();
 cout<<"\n\n\n\n         ";
 textcolor(YELLOW);
 cprintf("TODAY THE LUCKIEST PERSON AMONGST YOU IS ::");
-
+//using random function
 display("friends.dat");
 }
 {
 if(more==13)
 do{
-
+// the functionalities
     int x,y,cl,a,b;
 	     clrscr();
 	     cout<<"\n";                 textcolor(YELLOW);
@@ -1865,6 +1865,8 @@ gotoxy(1,1);
 	     if(save==1)
 		    { cout<<"\n   Enter USERNAME :  ";
 	     gets(password);
+		     //save your account by username
+		     // a text file of username is created in bin
 	      if((optio==1)||(optio==2))
 	    savee("friends.dat");    }
 	      gotoxy(10,5);
@@ -1876,7 +1878,7 @@ gotoxy(1,1);
   { cout<<k[q];  delay(100);}
     cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t";
     textcolor(YELLOW);
-    cprintf("Rate It At 'www.jaspreetsingh.com'");
+    cprintf("Rate and review it");
 
 } }
 getch();
