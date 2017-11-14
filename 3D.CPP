@@ -50,6 +50,7 @@ cin>>mm;}
 
 cprintf("\n Enter BIRTH Date : ");
 cin>>dd;
+ //conditions for right input combination
 while(dd>31||dd<=0||(mm==2&&dd==30)||dd==31&&(mm==2||mm==4||mm==6||mm==9||mm==11))
 {cout<<"\n Plz Write Again :";
 cin>>dd;}
@@ -121,7 +122,7 @@ strcpy(remnam,name);
 else if(rmon==mon)
 {if(rda<da)
   strcpy(remnam,name);   }
-
+// fort here is sun sign astrology 
 if((mm==3&&dd>=20)||(mm==4&&dd<=18)) strcpy(fort,"ARIES");
 if((mm==4&&dd>=19)||(mm==5&&dd<=19)) strcpy(fort,"TAURUS");if((mm==5&&dd>=20)||(mm==6&&dd<=20)) strcpy(fort,"GEMINI");if((mm==6&&dd>=21)||(mm==7&&dd<=21)) strcpy(fort,"CANCER");if((mm==7&&dd>=22)||(mm==8&&dd<=21)) strcpy(fort,"LEO");if((mm==8&&dd>=22)||(mm==9&&dd<=21)) strcpy(fort,"VIRGO");if((mm==9&&dd>=22)||(mm==10&&dd<=22)) strcpy(fort,"LIBRA");if((mm==10&&dd>=23)||(mm==11&&dd<=20)) strcpy(fort,"SCORPIO");if((mm==11&&dd>=21)||(mm==12&&dd<=20)) strcpy(fort,"SAGITTARIUS");if((mm==12&&dd>=21)||(mm==1&&dd<=19)) strcpy(fort,"CAPRICORN");if((mm==1&&dd>=20)||(mm==2&&dd<=18)) strcpy(fort,"AQUARIUS");if((mm==2&&dd>=19)||(mm==3&&dd<=19)) strcpy(fort,"PISCES");
 if(mon<0) {mon+=12; yr-=1;}
@@ -181,6 +182,7 @@ void calendar()
 {
 
  first=(ryr-(date-1))%7;
+//condition for right calendar month
  if(first<0)
 { first=7+first;}
 }
@@ -201,7 +203,7 @@ if(i==30)
 {if((mm==2)&&(yy%4==0))
 break;}
 
-
+//highlighting the date when person was born
  gotoxy(k,j);
 if(i==dd)
 { textcolor(RED+128)  ;
@@ -245,8 +247,9 @@ cout<<"\n\n\n  The BIRTHDAY ( "<< dd<<" / "<<mm<<" / "<<yy<<" ) Of "<<name<<"  W
 
 
   void dateobt()
-{         int r1=(yy)%100 ;
- k=yy-r1;
+{ //finding the day of birth using algorithms and printing it   
+int r1=(yy)%100 ;
+k=yy-r1;
 int r2=(k/100);
 int r3=((r1%12)+(r1/12)+(r1%12)/4)%7,c;
 if(r2==21||r2==17||r2==13||r2==9||r2==5||r2==1||r2==25)
@@ -328,7 +331,10 @@ r=(ryr-(date-dd))%7;
 
 
  void user(char fname[])
- { char pass[80];
+ {
+//making a new user
+//password variable here is of username
+char pass[80];
 strcpy(pass,(strcat(password,".txt")));
  fstream fil;
   fil.open(fname,ios::binary|ios::out);
@@ -367,7 +373,7 @@ fil.write((char*)&d,sizeof(d));
 
 
  void savee(char fname[])
- {// for saving the user account
+ {// for saving the user account as 'username.txt' file
 fstream fil;
 datee d;    int dat,mo;
 long int yr;   char nam[40],pass[80];
@@ -416,7 +422,9 @@ fil.write((char*)&d,sizeof(d));}
 
 
 void display(char fname[])
-{//display
+{
+//display of second screen 
+//lucky person using random function and his day of birth
 fstream fil;
 datee d;
 fil.open(fname,ios::binary|ios::in);
