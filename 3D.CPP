@@ -7,6 +7,10 @@
 #include<iomanip.h>
 #include<dos.h>
 #include<graphics.h>
+//In this user account can be saved in the form of .txt file
+//and using other txt files for inventions and discoveries as well on your friend's special days
+//adding reminder and use of mouse pointer is also implemented
+//other functions like grouping,adding,deleting etc. are implemented using binary files
 int friends,i=0,lucky,nn,co=0,min,l=1,op,flagopt,rmon,rda,remdt,optio=0,remmo,more,tod=0,opti=0;                                                                                                                                                                                                             char pword[10]="iamjs2";
 long int remyr;
 int dat,mo;
@@ -714,7 +718,7 @@ cout<<" :::::::::::::::::\n\n\n\n\t ";
 textcolor(GREEN);
 cprintf("T O D A Y   IS   Y O U R   F R I E N D 'S   B I R T H D A Y  !!  ");
  cout<<"\n\n\t\t     NAME Of FRIEND  ::     ";
-
+//creation of sound when reminder starts
 
   sound(523);
    delay(482);
@@ -903,6 +907,7 @@ j=a/60;
 m=j%60;
 h=a/3600;
 cout<<"\n\n\t\t\t\t";
+//the real time
 cout<<h<<":"<<m<<":"<<s<<":"<<ms;
 }
 };
@@ -1231,7 +1236,7 @@ cout<<"\n\n ";
 textcolor(GREEN);
 cprintf("______________________________________________________________________________");
 cout<<"\n\n";
-cprintf(" S.no. ::        NAME         ::      BIRTH      ::   AGE  ::    FORTUNE        ");
+cprintf(" S.no. ::        NAME         ::      BIRTH      ::   AGE  ::    SUNSIGN        ");
 cprintf("______________________________________________________________________________");
 cout<<"\n\n\n";
 textcolor(YELLOW);
@@ -1341,7 +1346,7 @@ if((nn=='b'||nn=='B'))
 {clrscr();
 
 textcolor(BLUE);
-cprintf(" S.no. ::        NAME         ::      BIRTH      ::   AGE  ::    FORTUNE  ");
+cprintf(" S.no. ::        NAME         ::      BIRTH      ::   AGE  ::    SUNSIGN  ");
 cout<<"\n\n\n";
 dispall("friends.dat");
 cout<<"\n\n\n Now Enter Which Friend no. you want to delete :  ";
@@ -1413,7 +1418,7 @@ else if(y==2)
 { clrscr();
 textcolor(YELLOW);
  cout<<"\n\n";
-cprintf(" S.no. ::        NAME         ::      BIRTH      ::   AGE  ::    FORTUNE  ");
+cprintf(" S.no. ::        NAME         ::      BIRTH      ::   AGE  ::    SUNSIGN  ");
 cout<<endl;
 textcolor(GREEN);
 cprintf("_______________________________________________________________________________");cout<<"\n\n\n";
@@ -1505,7 +1510,7 @@ fil.close();}
 else if(choi==2)
 { textcolor(CYAN);
  cout<<"\n\n";
-cprintf(" S.no. ::        NAME         ::      BIRTH      ::   AGE  ::    FORTUNE  ");
+cprintf(" S.no. ::        NAME         ::      BIRTH      ::   AGE  ::    SUNSIGN  ");
 cout<<endl;
 textcolor(GREEN);
 cprintf("_______________________________________________________________________________");cout<<"\n\n\n";
@@ -1614,7 +1619,7 @@ fil.close();}
 else if(choi==2)
 { textcolor(CYAN);
  cout<<"\n\n";
-cprintf(" S.no. ::        NAME         ::      BIRTH      ::   AGE  ::    FORTUNE  ");
+cprintf(" S.no. ::        NAME         ::      BIRTH      ::   AGE  ::    SUNSIGN  ");
 cout<<endl;
 textcolor(GREEN);
 cprintf("_______________________________________________________________________________");cout<<"\n\n\n";
@@ -1714,7 +1719,7 @@ fil.close();}
 else if(choi==2)
 { textcolor(CYAN);
  cout<<"\n\n";
-cprintf(" S.no. ::        NAME         ::      BIRTH      ::   AGE  ::    FORTUNE  ");
+cprintf(" S.no. ::        NAME         ::      BIRTH      ::   AGE  ::    SUNSIGN  ");
 cout<<endl;
 textcolor(GREEN);
 cprintf("_______________________________________________________________________________");cout<<"\n\n\n";
@@ -1824,7 +1829,7 @@ textcolor(GREEN);
 cprintf("______________________________________________________________________________");
 cout<<"\n\n";
 textcolor(YELLOW);
-cprintf(" S.no. ::        NAME         ::      BIRTH      ::   AGE  ::    FORTUNE  ");
+cprintf(" S.no. ::        NAME         ::      BIRTH      ::   AGE  ::    SUNSIGN  ");
 cout<<endl;
 textcolor(GREEN);
 cprintf("_______________________________________________________________________________");cout<<"\n\n\n";
@@ -1850,9 +1855,8 @@ clrscr();
 
 
 gotoxy(1,1);
-
-
-       textcolor(YELLOW);
+//border on last screen
+textcolor(YELLOW);
  cprintf("------------------------------------------------------------------------------");
  for(i=0;i<24;i++)
   {cout<<"\n";cprintf("|");}
@@ -1886,7 +1890,7 @@ gotoxy(1,1);
   { cout<<k[q];  delay(100);}
     cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t";
     textcolor(YELLOW);
-    cprintf("Rate and review it");
+    cprintf("Give a star if you like it");
 
 } }
 getch();
