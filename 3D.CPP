@@ -724,7 +724,7 @@ cprintf("T O D A Y   IS   Y O U R   F R I E N D 'S   B I R T H D A Y  !!  ");
    delay(482);
   char rr1=toupper(remnam[0]);
   cout<<rr1;
-
+//making a tune happy birthday 
    sound(585);
    delay(482);   cout<<remnam[1];
 
@@ -834,7 +834,7 @@ cprintf(" %2d:%02d:%02d",h,m,s);
 }
 };
 class DATE
-{
+{//reminder main screen
 public :
 int newdate;
 struct date d;
@@ -1012,6 +1012,7 @@ void main()
 {
  textcolor(YELLOW);
  clrscr();   char cz[10];
+	
  cout<<"\n\n\n\n\n\n\t\t Enter Password :: ";
  for(int i=0;i<5;i++)
  {cz[i]=getch();
@@ -1043,7 +1044,7 @@ gotoxy(1,1);
 
 gotoxy(1,1);
 
-// front screen animation
+// front screen animation like curtain
 for(i=13;i>1;i--)
 {gotoxy(18-i,i+13);
 cprintf(" | ");   }
@@ -1101,6 +1102,7 @@ cout<<pr[i];
 }
 textcolor(RED);
 cout<<"\n\n\n\n\t\t\t";
+	 //just for animation 
 cprintf("L O A D I N G");
 
 for(int x=1;x<10;x++)
@@ -1230,7 +1232,7 @@ create("friends.dat");
 randomize();
 lucky= random(friends)+1;
 
-
+//second screen that shows day of birth of lucky person with highlighted date
 
 cout<<"\n\n ";
 textcolor(GREEN);
@@ -1276,7 +1278,7 @@ do{
 	     {
 		    mouseposi(x,y,cl);
 		    gotoxy(10,9);
-
+//giving the conditions as per your mouse position
 		     if((cl==1)&&(x>17)&&(x<52)&&(y<25000))
 		   { opti=1; break;
 		 }
@@ -1305,13 +1307,14 @@ do{
    if(optio==1)
    optio++;
 if(opti==1)
-{
+{//adding
 cout<<"\n How Many More Friends You Want To Enter : " ;
 cin>>nn; co=friends;
 
 createe("friends.dat");      }
 else if(opti==2)
-{int fry;
+{//editing
+	int fry;
 cout<<"\n\n\n How Many FRIEND Records You Want To Edit : ";
 cin>>fry;
 for(int j=1;j<=fry;j++)
@@ -1332,7 +1335,7 @@ else nn-=48;
  i=nn-1;
 edit("friends.dat");  } }
 else if(opti==3)
-{
+{//deleting
 int fry;
 cout<<"\n\n\n How Many FRIEND Records You Want To Delete : ";
 cin>>fry;
@@ -1360,17 +1363,17 @@ friends-=fry;
 
 
 else if(opti==4)
-{
+{//grouping
 
 grp("friends.dat");
 }
 else if(opti==5)
-{
+{//day of birth
 dateob("friends.dat");
 }
 else if(opti==6)
 {
-
+//setting the reminder
 
  int i,x,y;
 TIME A;
@@ -1395,7 +1398,7 @@ B.showdate();
 textcolor(YELLOW);
 cout<<"\n\n\t\t";
 cprintf("_________________________________________________")  ;
-
+//home screen reminder
 cout<<"\n\n\n\n\t\t\t\tPress Any Key To Set REMINDER Or To Exit \n";
 
 
@@ -1702,7 +1705,7 @@ s.namee();
 cout<<"\n\n\n\t ";
 cprintf(" Invention On His B'day  :: ");cout<<"\n\n\t  ";
 ifstream f1("inv.txt");
-
+//reading inventions from txt file and checking 
 while(!f1.eof())
 {  f1>>d;
 f1.getline(n,250,'.');
@@ -1885,12 +1888,12 @@ textcolor(YELLOW);
 
       cout<<"\n\n\n\n\n\n\t\t\t ";
       char k[20]="T H A N K  Y O U ";
-
+//animating THANK YOU
    for(int q=0;q<20;q++)
   { cout<<k[q];  delay(100);}
     cout<<"\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t";
     textcolor(YELLOW);
-    cprintf("Give a star if you like it");
+    cprintf("Give a star to its github repo if you like it");
 
 } }
 getch();
