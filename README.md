@@ -9,10 +9,10 @@ To use the project :<br>
 Copy the files 3d.cpp, inv.txt, oc.txt, person.txt in your bin folder of C++ and run the .cpp file in C++
  <hr> 
 The password while running the code is : <br>
-Password : iamjs
+Password : iamjs 
 Use this password when you run the code 
 <br>
-Give it  a star if you like it.. 
+You may open an issue for any suggestions or bug and open pull request for the same. 
 
 ##### MIT License
 ```
