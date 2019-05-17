@@ -14,7 +14,7 @@ Use this password when you run the code
 <br>
 
 Video link : 
-https://youtu.be/lVCmPthPo5U o
+https://youtu.be/lVCmPthPo5U
 
 You may open an issue for any suggestions or bug and open pull request for the same. 
 
