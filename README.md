@@ -12,6 +12,10 @@ The password while running the code is : <br>
 Password : iamjs 
 Use this password when you run the code 
 <br>
+
+Video link : 
+https://youtu.be/lVCmPthPo5U o
+
 You may open an issue for any suggestions or bug and open pull request for the same. 
 
 ##### MIT License
